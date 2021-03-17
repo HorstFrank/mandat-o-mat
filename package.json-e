@@ -13,7 +13,7 @@
     "prepare": "husky install",
     "typecheck": "tsc",
     "test": "npm run lint && npm run slint && npm run prettycheck && npm run typecheck",
-    "storybook": "start-storybook -s public -p 6006",
+    "storybook": "start-storybook -p 6006",
     "build-next": "next build",
     "build-storybook": "build-storybook",
     "build-server": "tsc --project tsconfig.server.json"

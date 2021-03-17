@@ -1,14 +1,32 @@
+## Willkommen im Repo vom MANDAT-O-MAT
+
+// Was ist der MANDAT-O-MAT?
+
+// Wie funktioniert der MANDAT-O-MAT
+
+// Woher kommen die Daten?
+
+Dies ist mein Gesellenstück vom WebDev-Bootcamp der [Neuen Fische](https://www.neuefische.de).
+
+#### Du hast einen Fehler gefunden?
+
+Dann kannst du:
+
+- ein [Issue](https://github.com/HorstFrank/mandat-o-mat/issues) eröffnen.
+- dir das Reposetory Clonen, den Fehler beheben und einen [Pullrequest](https://github.com/HorstFrank/mandat-o-mat/pulls) eröffnen.
+
+### Development
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+#### Getting Started Development
 
 First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+`npm run dev`
+`npm run build`
+`npm run start`
+`npm run storybook`
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
@@ -18,7 +36,7 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-## Learn More
+#### Learn More
 
 To learn more about Next.js, take a look at the following resources:
 
@@ -27,15 +45,17 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+#### Deploy on Vercel
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-## All installation Sources (&& Steps)
+#### All installation Sources (&& Steps)
 
 - https://nextjs.org/docs/getting-started
+
+- `npx create-next-app`
 
 ##### Prettier
 
@@ -169,3 +189,59 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - `echo '.btn {\n border-radius: 10px;\n}\n\n.primary {\ncolor: antiquewhite;\nbackground: black;\n}' > components/ExampleButton/Button.module.css`
 - `echo 'import React from "react";\n\nimport { Story, Meta } from "@storybook/react/types-6-0";\nimport Button, { ButtonProps } from "./Button";\n\nexport default {\n title: "Common/Button",\n component: Button,\n} as Meta;\n\nconst Template: \nStory<ButtonProps> = (args) => <Button {...args} />;\n\nexport const Primary = Template.bind({});\nPrimary.args = {\n primary: true,\n label: "Button",\n };\n\nexport const Secondary = Template.bind({});\n Secondary.args = {\n label: "Button",\n};\n' > components/ExampleButton/Button.stories.tsx`
 - `echo 'import "./Button.module.css";\n\nexport type ButtonProps = {\n primary: boolean;\n label: string;\n};\n\nfunction Button({ primary, label, ...props }: ButtonProps) {\n return (\n <button className={`btn ${primary ? "primary" : ""}`} {...props}>\n {label}\n </button>\n );\n}\n\nexport default Button;' > components/ExampleButton/Button.tsx`
+
+##### custom-server
+
+A custom server supports consistent connections with web sockets or databases and allows custom routing.
+Guides:
+https://nextjs.org/docs/advanced-features/custom-server
+https://github.com/vercel/next.js/tree/canary/examples/custom-server-typescript
+
+Steps:
+
+Add server folder with server/index.ts. This is the server entry point with a custom route for /storybook to allow a deployment of the app and storybook on a single server. All other requests are forwarded to next request handler.
+
+`mkdir server && echo '' > server/index.ts`
+
+`npm i -D nodemon ts-node` which is required for the new dev script.
+
+Add tsconfig.server.json for a custom TypeScript config for the server side. The existing tsconfig is extended, but it's required to change the module (More details).
+
+`echo '{\n "extends": "./tsconfig.json",\n "compilerOptions": {\n "module": "commonjs",\n "outDir": "build",\n "target": "es2017",\n "isolatedModules": false,\n "noEmit": false\n },\n "include": ["server/**/*.ts"]\n\n}' > tsconfig.server.json`
+
+Add nodemon.json to configure nodemon. The server folder is watched.
+
+<code>echo '{\n "watch": ["server"],\n "exec": "ts-node --project tsconfig.server.json server/index.ts",\n "ext": "js ts"\n}' > nodemon.json </code>
+
+Add and update dev, build-next, build-server, build and start scripts.
+
+`sed -i -e 's/"dev": "next dev"/"dev": "nodemon"/g' package.json`
+
+`sed -i -e 's/"build": "next build"/"build": "next build \&\& tsc --project tsconfig.server.json"/g' package.json`
+
+`sed -i -e 's/"start": "next start"/"start": "NODE_ENV=production node build\/index.js"/g' package.json`
+
+npm run dev is used in development with hot module replacement.
+npm run build creates optimized client, storybook and server builds.
+npm start calls the server build.
+
+Please verify that all scripts are working and try out /storybook route.
+
+Notes:
+
+A custom server can not be deployed on Vercel, the platform Next.js was made for.
+
+"build": "npm run build-next && npm run build-storybook && npm run server",
+
+    "build-next": "next build",
+    "build-storybook": "build-storybook",
+    "build-server": "tsc --project tsconfig.server.json"
+
+npm run dev
+npm run start
+npm run storybook
+
+`sed -i -e 's/start-storybook -p 6006/start-storybook -s public -p 6006/g' package.json`
+
+"storybook": "start-storybook -p 6006",
+"storybook": "start-storybook -s public -p 6006",
