@@ -9,16 +9,3 @@ export default {
 } as Meta;
 
 export const iSettings = () => <IconSettings />;
-
-// const Template: Story<IconType> = (args) => <IconSettings {...args} />;
-
-// export const IconSettings = Template.bind({});
-// IconSettings.args = {
-//   primary: true,
-//   label: "Beschriftung 3",
-// };
-
-// export const Secondaryx = Template.bind({});
-// Secondaryx.args = {
-//   label: "BEschriftung 2",
-// };
