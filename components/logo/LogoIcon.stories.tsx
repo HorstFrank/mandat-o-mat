@@ -1,11 +1,11 @@
 import React from "react";
 
 import { Meta } from "@storybook/react/types-6-0";
-import Logo from "./Logo";
+import LogoIcon from "./LogoIcon";
 
 export default {
   title: "Common/Logo",
-  component: Logo,
+  component: LogoIcon,
 } as Meta;
 
-export const LogoBig = () => <Logo />;
+export const logoIcon = () => <LogoIcon />;

@@ -1,11 +1,16 @@
-import {SVGProps} from "react";
+// import { SVGProps } from "react";
 
 /*
 memo:
 SVGAttributes<T>.style?: CSSProperties
 */
 
-export default function Logo(props): SVGProps<SVGRectElement> {
+export type LogoType = {
+  fill?: string;
+  crossfill?: string;
+};
+
+export default function Logo(props: LogoType) {
   const param = {
     fill: props.fill || "#CACACA",
     crossfill: props.crossfill || "orange",
@@ -15,8 +20,20 @@ export default function Logo(props): SVGProps<SVGRectElement> {
     <svg x="0px" y="0px" viewBox="0 0 513.29 101.12">
       <g id="crosstionmark-icon">
         <g id="questionmark">
-          <rect fill={param.fill} x="310.96" y="73.1" width="9.71" height="14.04" />
-          <rect fill={param.fill} x="310.96" y="91.41" width="9.71" height="9.71" />
+          <rect
+            fill={param.fill}
+            x="310.96"
+            y="73.1"
+            width="9.71"
+            height="14.04"
+          />
+          <rect
+            fill={param.fill}
+            x="310.96"
+            y="91.41"
+            width="9.71"
+            height="9.71"
+          />
           <path
             fill={param.fill}
             d="M315.08,3.77c-21.41,0-38.77,17.36-38.77,38.77c0,2.99,0.34,5.9,0.98,8.7l7.99-1.91c-0.5-2.18-0.76-4.46-0.76-6.79

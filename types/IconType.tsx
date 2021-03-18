@@ -3,6 +3,6 @@ export type IconType = {
   fill?: string;
   strokeWidth?: number;
   stroke?: string;
-  strokeLinecap?: string;
-  strokeLinejoin?: string;
+  strokeLinecap?: "round" | "butt" | "square" | "inherit";
+  strokeLinejoin?: "round" | "inherit" | "miter" | "bevel";
 };

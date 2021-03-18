@@ -1,7 +1,7 @@
 import React from "react";
-import ProgressbarType from "../../types/ProgressbarType";
+import { ProgressbarType } from "../../types/ProgressbarType";
 
-import {Story, Meta} from "@storybook/react/types-6-0";
+import { Story, Meta } from "@storybook/react/types-6-0";
 import Progressbar from "./Progressbar";
 
 export default {
@@ -11,7 +11,7 @@ export default {
 
 // export const progressbar = () => <Progressbar />;
 
-const Template: Story<ProgressbarType> = (args) => <Progressbar {...args} />;
+const Template: Story<ProgressbarType> = () => <Progressbar />;
 
 export const progressbar = Template.bind({});
 progressbar.args = {};
