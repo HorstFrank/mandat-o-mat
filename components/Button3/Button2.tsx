@@ -1,3 +1,9 @@
+/*
+
+THIS IS A SAMPLE COMPONENT
+
+*/
+
 import "./Button2.module.css";
 
 export type ButtonProps2 = {
@@ -5,7 +11,7 @@ export type ButtonProps2 = {
   label: string;
 };
 
-export default function Button2({ primary, label, ...props }: ButtonProps2) {
+export default function Button2({primary, label, ...props}: ButtonProps2) {
   return (
     <button className={`btn ${primary ? "primary" : ""}`} {...props}>
       {label}

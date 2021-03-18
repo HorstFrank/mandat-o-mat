@@ -1,0 +1,22 @@
+.btn {
+  border-radius: 10px;
+}
+
+.primary {
+  color: antiquewhite;
+  background: black;
+}
+
+.icon-default {
+  fill: none;
+  stroke: #000;
+  /* stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 3; */
+}
+
+/* fill="none"
+stroke="#000"
+stroke-linecap="round"
+stroke-linejoin="round"
+stroke-width="3" */

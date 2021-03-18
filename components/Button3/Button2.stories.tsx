@@ -1,7 +1,7 @@
 import React from "react";
 
-import { Story, Meta } from "@storybook/react/types-6-0";
-import Button2, { ButtonProps2 } from "./Button2";
+import {Story, Meta} from "@storybook/react/types-6-0";
+import Button2, {ButtonProps2} from "./Button2";
 
 export default {
   title: "Common/Button2",
@@ -20,3 +20,6 @@ export const Secondaryx = Template.bind({});
 Secondaryx.args = {
   label: "BEschriftung 2",
 };
+
+// https://storybook.js.org/docs/react/api/csf
+// https://storybook.js.org/docs/react/writing-docs/doc-blocks#argstable
