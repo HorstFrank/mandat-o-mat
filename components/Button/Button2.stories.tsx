@@ -18,7 +18,7 @@ Primaryx.args = {
 
 export const Secondaryx = Template.bind({});
 Secondaryx.args = {
-  label: "BEschriftung 2",
+  label: "Beschriftung 2",
 };
 
 // https://storybook.js.org/docs/react/api/csf
