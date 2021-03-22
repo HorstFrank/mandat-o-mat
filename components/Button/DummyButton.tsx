@@ -9,7 +9,7 @@ export type Button = {
 
 export default function DummyButton({ label, value, handleClick }: Button) {
   return (
-    <div className="btnwrapper">
+    <div className="btnWrapper">
       <div onClick={() => handleClick(value)}>{label}</div>
     </div>
   );
