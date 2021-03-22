@@ -13,7 +13,7 @@ export default function BottomNavigation() {
         </li>
         <li>
           <Link href={`/result`} key={"result"}>
-            Result
+            result
           </Link>
         </li>
         <li>
