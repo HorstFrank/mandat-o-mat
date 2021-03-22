@@ -1,0 +1,36 @@
+.btnwrapper {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+.button {
+  padding: 0.7em 1.5em;
+  border-radius: 2em;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: "lt_internet", Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  font-weight: normal;
+  font-style: normal;
+  white-space: nowrap;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+
+.regular {
+  color: var(--basebackground);
+  background: var(--primary);
+  border: 1px solid var(--primary);
+}
+.unfocus {
+  color: var(--text);
+  background: null;
+  border: 1px solid var(--text);
+}
+
+.filled {
+  color: var(--basebackground);
+  background: var(--text);
+  border: 1px solid var(--text);
+}
