@@ -1,22 +1,11 @@
 import React from "react";
 
-import { Story, Meta } from "@storybook/react/types-6-0";
-import iconSettings, { icon } from "./iconSettings";
+import { Meta } from "@storybook/react/types-6-0";
+import IconSettings from "./IconSettings";
 
 export default {
-  title: "Common/iconSettings",
-  component: iconSettings,
+  title: "Common/IconSettings",
+  component: IconSettings,
 } as Meta;
 
-const Template: Story<icon> = () => <iconSettings />;
-
-export const Primaryx = Template.bind({});
-Primaryx.args = {
-  // primary: true,
-  // label: "Beschriftung 3",
-};
-
-// export const Secondaryx = Template.bind({});
-// Secondaryx.args = {
-//   label: "BEschriftung 2",
-// };
+export const iSettings = () => <IconSettings />;

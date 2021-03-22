@@ -18,5 +18,3 @@ export default function Button2({ primary, label, ...props }: ButtonProps2) {
     </button>
   );
 }
-
-// export default Button2;
