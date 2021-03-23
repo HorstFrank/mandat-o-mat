@@ -1,16 +1,30 @@
+@font-face {
+  font-family: "lt_internet";
+  src: url("../assets/fonts/lt_internet/LTInternet-Bold.ttf") format("truetype");
+}
+
+* {
+  --primary: #ffcf05;
+  --shaddow: #252525;
+  --deepfocus: #303030;
+  --deepborder: #383838;
+  --basebackground: #424242;
+  --contextbackground: #606060;
+  --menuebackground: #535353;
+  --icon: #c2c2c2;
+  --text: #cfcfcf;
+  --texthighlight: #f3f3f3;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "internet", Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
 }
 
 a {
   color: inherit;
   text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
 }
