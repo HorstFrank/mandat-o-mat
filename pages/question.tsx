@@ -17,7 +17,7 @@ export default function Home() {
       selected state: <br />
       question view <br />
       <QuestionButtonSet handleClick={handleClick} /> <br />
-      <BottomNavigation />
+      <BottomNavigation activeLink={""} />
     </div>
   );
 }

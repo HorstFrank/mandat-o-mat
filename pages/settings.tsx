@@ -8,7 +8,7 @@ export default function Home() {
     <div className={styles.container}>
       <Header />
       settings view
-      <BottomNavigation />
+      <BottomNavigation activeLink={""} />
     </div>
   );
 }
