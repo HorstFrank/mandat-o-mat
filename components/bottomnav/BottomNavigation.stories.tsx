@@ -1,19 +1,33 @@
+import { Meta, Story } from "@storybook/react/types-6-0";
 import React from "react";
 
-import { BottomNavigation } from "./BottomNavigation";
+import BottomNavigation, { BottomNavigationProps } from "./BottomNavigation";
 
-export const BottomNav = () => <BottomNavigation />;
+export default {
+  title: "Common/Bottom Navigation",
+  component: BottomNavigation,
+} as Meta;
 
-// export const Primaryx = Template.bind({});
-// Primaryx.args = {
-//   flavour: "filled",
-//   label: "Beschriftung 3",
-// };
+const Template: Story<BottomNavigationProps> = (args) => (
+  <BottomNavigation {...args} />
+);
 
-// export const Secondaryx = Template.bind({});
-// Secondaryx.args = {
-//   label: "Beschriftung 2",
-// };
+export const QuestionsActive = Template.bind({});
+QuestionsActive.args = {
+  activeLink: "/question",
+};
 
-// https://storybook.js.org/docs/react/api/csf
-// https://storybook.js.org/docs/react/writing-docs/doc-blocks#argstable
+export const ResultActive = Template.bind({});
+ResultActive.args = {
+  activeLink: "/result",
+};
+
+export const InfoActive = Template.bind({});
+InfoActive.args = {
+  activeLink: "/info",
+};
+
+export const SettingsActive = Template.bind({});
+SettingsActive.args = {
+  activeLink: "/settings",
+};
