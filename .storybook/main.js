@@ -7,5 +7,6 @@ module.exports = {
     "@storybook/addon-links",
     "@storybook/addon-essentials",
     "@storybook/addon-controls",
+    "storybook-css-modules-preset",
   ],
 };
