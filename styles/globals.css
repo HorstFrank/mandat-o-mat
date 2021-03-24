@@ -5,15 +5,15 @@
 
 * {
   --primary: #ffcf05;
-  --shaddow: #252525;
-  --deepfocus: #303030;
-  --deepborder: #383838;
-  --basebackground: #424242;
-  --contextbackground: #606060;
-  --menuebackground: #535353;
+  --shadow: #252525;
+  --deep-focus: #303030;
+  --deep-border: #383838;
+  --base-background: #424242;
+  --context-background: #606060;
+  --menue-background: #535353;
   --icon: #c2c2c2;
   --text: #cfcfcf;
-  --texthighlight: #f3f3f3;
+  --text-highlight: #f3f3f3;
 }
 
 html,
