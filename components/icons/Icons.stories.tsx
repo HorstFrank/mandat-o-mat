@@ -10,7 +10,7 @@ export default {
 
 const Template: Story<IconProps> = (args) => <Icon {...args} />;
 
-export const IconSetting = Template.bind({});
-IconSetting.args = {};
+export const IconAll = Template.bind({});
+IconAll.args = {};
 
 // export const iSettings = () => <Icon />;

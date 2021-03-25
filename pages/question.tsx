@@ -13,11 +13,8 @@ export default function Home() {
 
   return (
     <div className={styles.container}>
-      <Header /> <br />
       selected state: <br />
       question view <br />
-      <QuestionButtonSet handleClick={handleClick} /> <br />
-      <BottomNavigation activeLink={""} />
     </div>
   );
 }

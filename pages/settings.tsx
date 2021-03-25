@@ -4,11 +4,5 @@ import Header from "../components/header/Header";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
-  return (
-    <div className={styles.container}>
-      <Header />
-      settings view
-      <BottomNavigation activeLink={""} />
-    </div>
-  );
+  return <div className={styles.container}>settings view</div>;
 }
