@@ -1,8 +1,5 @@
 import React from "react";
-
 import "./QuestionButtonset.module.css";
-// import "../../styles/globals.css";
-// import { ButtonType } from "../../types/ButtonType";
 
 export type qButtonSetType = {
   handleClick?: React.MouseEventHandler<HTMLDivElement>;
