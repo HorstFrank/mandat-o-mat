@@ -2,33 +2,21 @@ import Link from "next/link";
 import React from "react";
 import Icon from "../icons/Icons";
 import styles from "./BottomNavigation.module.css";
+import { txt } from "../../assets/utils/txt";
 
 export type BottomNavigationProps = {
   activeLink: string;
 };
 
-const navLinks = [
-  {
-    uri: "/question",
-    label: "Start",
-    icon: "question",
-  },
-  {
-    uri: "/result",
-    label: "Ergebnis",
-    icon: "result",
-  },
-  {
-    uri: "/info",
-    label: "Diese App",
-    icon: "info",
-  },
-  {
-    uri: "/settings",
-    label: "Einstellungen",
-    icon: "settings",
-  },
-];
+const buttons = ["question", "result", "info", "settings"];
+
+const navLinks = buttons.map((navlink) => {
+  return {
+    uri: "/" + navlink,
+    label: txt("buttonlabel")[navlink],
+    icon: navlink,
+  };
+});
 
 export default function BottomNavigation({
   activeLink,
