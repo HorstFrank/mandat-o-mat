@@ -1,7 +1,15 @@
 import React from "react";
+import { Meta, Story } from "@storybook/react/types-6-0";
+import Header, { HeaderProps } from "./Header";
 
-// import { Story, Meta } from "@storybook/react/types-6-0";
-import Header from "./Header";
-// import { ButtonType } from "../../types/ButtonType";
+export default {
+  title: "Common/Header",
+  component: Header,
+} as Meta;
 
-export const MainHeader = () => <Header />;
+const Template: Story<HeaderProps> = (args) => <Header {...args} />;
+
+export const MainHeader = Template.bind({});
+MainHeader.args = {
+  colored: true,
+};
