@@ -1,0 +1,21 @@
+.btn {
+  border-radius: 100px;
+  padding: 0.8em 2em 0.8em 2em;
+  width: 700px;
+}
+
+.flavor-primary {
+  color: var(--base-background);
+  background-color: var(--primary);
+}
+
+.flavor-empty {
+  color: var(--icon);
+  background-color: none;
+  border: 1px solid var(--icon);
+}
+
+.flavor-filled {
+  color: var(--base-background);
+  background-color: var(--icon);
+}
