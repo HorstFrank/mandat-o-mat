@@ -1,8 +1,21 @@
-import React from "react";
-import BottomNavigation from "../components/bottomnav/BottomNavigation";
-import Header from "../components/header/Header";
-import styles from "../styles/Home.module.css";
+import React, { useState } from "react";
+import TopNavigation from "../components/TopNavigation/TopNavigation";
+import styles from "../styles/info.module.css";
+import { txt } from "../assets/utils/txt";
+
+import parse from "html-react-parser";
 
 export default function Home() {
-  return <div className={styles.container}>infoview</div>;
+  const [state, setstate] = useState("thisapp");
+
+  const handleClick = (selectKey) => {
+    setstate(selectKey);
+  };
+
+  return (
+    <div className={styles.container}>
+      <TopNavigation selectKey="thisapp" handleClick={handleClick} />
+      <div>{parse(txt("infotext")[state])}</div>
+    </div>
+  );
 }

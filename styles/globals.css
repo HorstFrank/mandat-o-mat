@@ -5,6 +5,7 @@
 }
 
 * {
+  /* ------ COLORS ------ */
   --primary: #ffcf05;
   --shadow: #252525;
   --deep-focus: #303030;
@@ -15,6 +16,11 @@
   --icon: #c2c2c2;
   --text: #cfcfcf;
   --text-highlight: #f3f3f3;
+
+  /* ------ TopNavLine ------ */
+
+  --unselected-width: 1;
+  --selected-width: 2;
 }
 
 html,
