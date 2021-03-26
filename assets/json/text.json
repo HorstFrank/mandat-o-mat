@@ -4,5 +4,63 @@
     "result": "Ergebnis",
     "info": "Diese App",
     "settings": "Einstellungen"
+  },
+  "topnav": {
+    "thisapp": "Diese App",
+    "privacy": "Datenschutz",
+    "imprint": "Impressum"
+  },
+  "infotext": {
+    "thisapp": "Dies ist der Text zu diese App",
+    "privacy": "Dies ist der text zum Datenschutz",
+    "imprint": "Dies ist der text zum Impressum"
+  },
+  "intro": {
+    "welcome": {
+      "label": "Willkommen",
+      "content": "Du willst sicher gleich loslegen mit den Fragen. Doch vorher solltest du einiges über diese App wissen."
+    },
+    "thisapp": {
+      "label": "Warum ist diese App schlecht?",
+      "content": "Das Prinzip dieser App führt dazu, dass nur die etablierten Parteien berücksichtigt werden."
+    },
+    "good": {
+      "label": "Warum ist dies App gut?",
+      "content": "Diese App nimmt das Abstimmungsverhalten der Parteien als Basis. Nicht das Parteiprogramm oder ein Wahlomatfragebogen."
+    },
+    "privacy": {
+      "label": "Datenschutz",
+      "content": "sea takimata sanctus est Lorem ipsum dolor sit amet.eirmod tempor invidunt ut labore et dolore magna aliquyam "
+    }
+  },
+  "intro_checkbox": {
+    "check": "Ich habe mir den Text nicht durchgelesen und klicke einfach alle Felder an, damit es endlich weitergeht."
+  },
+  "buttons": {
+    "xxx": "Weiter",
+    "yes": "Ja",
+    "no": "Nein",
+    "abone": "Enthaltung"
+  },
+  "info": {
+    "thisapp": {},
+    "privacy": {},
+    "imprint": {}
+  },
+  "question": {
+    "state": "Frage ##f1## von ##f2##",
+    "date": "##kind## vom ##date###",
+    "source": "Original Gesetzentwurf"
+  },
+  "result": {
+    "default": {
+      "label": "",
+      "content": "Es wurden noch nicht <br/>genügend Fragen <br/> beantwortet um eine <br/>  Berechnung durchzuführen.",
+      "xx": "Bitte beantworte<br/>noch einige Fragen."
+    },
+    "result": {
+      "label": "Auswertung",
+      "content": "Deine Antworten hatten eine <br/>##p##%<br/>Übereinstimmung mit den<br/>Abstimmungen der <br/>##XXXXpartei##"
+    }
   }
 }

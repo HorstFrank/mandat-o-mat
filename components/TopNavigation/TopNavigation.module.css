@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  list-style: none;
+  background-color: var(--menue-background);
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 2em;
+
+  /* column-gap: 2px; */
+}
+
+.container > li {
+  font-family: "internet", Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-size: 10px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  width: 33%;
+  height: 100%;
+  display: grid;
+  align-content: center;
+
+  /* padding: 0.5em 0; */
+}
