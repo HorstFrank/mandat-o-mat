@@ -1,0 +1,38 @@
+.container {
+  font-size: 20px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.default {
+  text-align: center;
+}
+
+.hint-arrow-group {
+  position: absolute;
+  top: calc(var(--bottom-nav-height) * 6.2);
+  left: calc(100vw * 0.11);
+  color: var(--primary);
+  font-size: 1rem;
+}
+
+.svg-arrow {
+  width: 7rem;
+  /* height: 73.105px; */
+}
+.hint-text {
+  position: relative;
+  top: -120px;
+  left: 122px;
+}
+
+.result {
+  text-align: center;
+}
+
+.result span {
+  color: var(--primary);
+}

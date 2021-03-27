@@ -1,0 +1,18 @@
+.container {
+  width: 100%;
+}
+.question {
+  color: var(--primary);
+  font-size: 1.5rem;
+  text-align: center;
+  border-bottom: var(--context-background) 2px solid;
+  padding: 2em 0 2em 0;
+}
+
+.question-info {
+  padding-top: 5px;
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  color: var(--icon);
+  text-align: center;
+}

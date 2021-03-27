@@ -21,6 +21,7 @@ const navLinks = buttons.map((navlink) => {
 export default function BottomNavigation({
   activeLink,
 }: BottomNavigationProps) {
+  console.log(styles);
   return (
     <ul className={styles.container}>
       {navLinks.map((navLink) => {
