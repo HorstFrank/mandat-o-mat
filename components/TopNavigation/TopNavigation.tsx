@@ -5,7 +5,7 @@ import { createKeyLabelObjectFromTxtJson } from "../../assets/utils/createKeyLab
 
 export type TopNavigationProps = {
   selectKey: string;
-  handleClick?: React.MouseEvent<HTMLElement>;
+  handleClick?: React.MouseEvent<HTMLElement, MouseEvent>;
 };
 
 export default function TopNavigation({
