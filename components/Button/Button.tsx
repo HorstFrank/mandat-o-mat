@@ -19,7 +19,6 @@ export default function Button({
   handleClick,
   ...props
 }: ButtonType) {
-  value = value || label;
   if (props && typeof props.width !== "undefined") {
     props["display"] = "inline-block";
     props["text-align"] = "center";

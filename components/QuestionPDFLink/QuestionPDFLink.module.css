@@ -1,0 +1,14 @@
+.container {
+  /* display: flex;
+  align-items: center; */
+  text-align: center;
+  color: var(--icon);
+  font-size: 0.8 rem;
+  letter-spacing: 0.1em;
+  padding-top: 2em;
+}
+
+.label {
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+}

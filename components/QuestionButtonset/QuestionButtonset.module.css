@@ -1,3 +1,4 @@
-.thisIsADummyClassToCheatStylint {
-  width: 400%;
+.container {
+  margin-top: 2em;
+  text-align: center;
 }

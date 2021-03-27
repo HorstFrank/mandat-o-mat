@@ -1,8 +1,8 @@
 import { ProgressbarType } from "../../types/ProgressbarType";
 
 export default function Progressbar({
-  colorBackground = "gray",
-  colorProgress = "orange",
+  colorBackground,
+  colorProgress,
   width = "100%",
   height = 2,
   progress = 0.5,
@@ -10,14 +10,20 @@ export default function Progressbar({
   y = 0,
 }: ProgressbarType) {
   return (
-    <svg width="100%" height="100%" transform="scale(1,1)">
-      <rect x={x} y={y} width={width} height={height} fill={colorBackground} />
+    <svg width="100%" height={`${height}px`}>
+      <rect
+        x={x}
+        y={y}
+        width={width}
+        height={height}
+        fill={colorBackground ? colorBackground : "var(--context-background)"}
+      />
       <rect
         x={x}
         y={y}
         width={updateWidthStringWithProgress(width, progress)}
         height={height}
-        fill={colorProgress}
+        fill={colorProgress ? colorProgress : "var(--primary)"}
       />
     </svg>
   );

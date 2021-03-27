@@ -1,0 +1,34 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.modal-main {
+  position: fixed;
+  background: white;
+  margin: var(--pdf-mod-margin-top) var(--pdf-mod-margin-right)
+    var(--pdf-mod-margin-bottom) var(--pdf-mod-margin-left);
+  width: calc(100vw - var(--pdf-mod-margin-right) - var(--pdf-mod-margin-left));
+  height: calc(
+    100vh - var(--pdf-mod-margin-top) - var(--pdf-mod-margin-bottom)
+  );
+}
+
+.display-block {
+  display: block;
+}
+
+.display-none {
+  display: none;
+}
+
+.close-button {
+  position: absolute;
+  top: calc(var(--close-icon-width) * -0.7);
+  /* left: calc(100vw - var(--pdf-mod-margin-right)); */
+  left: calc(100% - (var(--close-icon-width) * 0.5));
+}

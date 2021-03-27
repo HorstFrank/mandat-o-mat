@@ -40,27 +40,30 @@
     "xxx": "Weiter",
     "yes": "Ja",
     "no": "Nein",
-    "abone": "Enthaltung"
+    "abstain": "Enthaltung"
   },
   "info": {
-    "thisapp": {},
-    "privacy": {},
-    "imprint": {}
+    "thisapp": {
+      "label": "Diese App",
+      "conten": "… ist eine Entscheidungshilfe, wenn du nicht genau weisst, welche Partei du wählen willst oder sollst. Im Gegensatz zu herkömmlichen Wahlomaten müssen hier die gleichen Fragen beantwortet werden, über die auch die Mandatsträger der auslaufenden Legislatur abgestimmt haben.       Du schlüpfst also für diesen Moment in die Rolle eines Parlamentariers und stimmst ab. Dein Abstimmungsverhalten wird mit den echten Abstimmungen verglichen. Nach etwa XX Fragen lässt sich errechnen, zu welcher Fraktion du auf Grund deiner Antworten du gehören würdest.  Also mit welcher Partei du die größte Übereinstimmung hast. (Scheiße formuliert … ändere ich alles noch :D "
+    },
+    "privacy": { "label": "Datenschutz", "content": "" },
+    "imprint": { "label": "Impressum", "content": "" }
   },
   "question": {
     "state": "Frage ##f1## von ##f2##",
-    "date": "##kind## vom ##date###",
+    "date": "##kind## vom ##date##",
     "source": "Original Gesetzentwurf"
   },
   "result": {
     "default": {
       "label": "",
       "content": "Es wurden noch nicht <br/>genügend Fragen <br/> beantwortet um eine <br/>  Berechnung durchzuführen.",
-      "xx": "Bitte beantworte<br/>noch einige Fragen."
+      "hint": "Bitte beantworte<br/>noch einige Fragen."
     },
     "result": {
       "label": "Auswertung",
-      "content": "Deine Antworten hatten eine <br/>##p##%<br/>Übereinstimmung mit den<br/>Abstimmungen der <br/>##XXXXpartei##"
+      "content": "Deine Antworten hatten eine <br/><span class='primarycolor'>##p##%</span><br/>Übereinstimmung mit den<br/>Abstimmungen der <br/><span class='primarycolor'>##fraction##</span>"
     }
   }
 }
