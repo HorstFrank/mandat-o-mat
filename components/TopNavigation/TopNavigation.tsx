@@ -28,20 +28,20 @@ export default function TopNavigation({
           <li key={key}>
             <a href="#" onClick={() => handleInteraction(listelement.key)}>
               {listelement.label}
+              <svg className={styles.svg} width="100%" height="2px">
+                <rect
+                  x={0}
+                  y={linestatus === listelement.key ? 0 : 1}
+                  width="100%"
+                  height={linestatus === listelement.key ? "2px" : "1px"}
+                  fill={
+                    linestatus === listelement.key
+                      ? "var(--primary)"
+                      : "var(--text)"
+                  }
+                />
+              </svg>
             </a>
-            <svg width="100%" height="2px">
-              <rect
-                x={0}
-                y={linestatus === listelement.key ? 0 : 0.5}
-                width="100%"
-                height={linestatus === listelement.key ? "2px" : "1px"}
-                fill={
-                  linestatus === listelement.key
-                    ? "var(--primary)"
-                    : "var(--text)"
-                }
-              />
-            </svg>
           </li>
         );
       })}

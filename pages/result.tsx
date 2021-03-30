@@ -57,7 +57,16 @@ export default function Result() {
             }}
           ></div>
           <div>
-            <Donut />
+            <Donut
+              data={{
+                ABC: 30,
+                DEF: 30,
+                KNL: 20,
+                HIJ: 10,
+                EFG: 10,
+              }}
+              primary={["DEF"]}
+            />
           </div>
         </>
       )}

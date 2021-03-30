@@ -21,8 +21,8 @@ export default function QuestionPDFmodal({ url = "", state = false, onClick }) {
           src={url}
           width="100%"
           height="100%"
-          allowScriptAccess="always"
-          allowFullScreen="false"
+          allow-script-access="always"
+          allow-full-screen="false"
           type="application/pdf"
         />
         {/* 

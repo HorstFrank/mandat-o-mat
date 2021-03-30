@@ -23,6 +23,7 @@
   --bottom-nav-height: 10vh;
   --top-shadow-height: 20px;
   --bottom-shadow-height: 20px;
+  --subnav-info-height: 50px;
 
   /* ------ PDF-Modal  ------ */
   --pdf-mod-margin-top: 15vh;
@@ -66,7 +67,7 @@ a {
 
 .content {
   position: absolute;
-  top: calc(var(--header-height) + 2.5vh);
+  top: calc(var(--header-height) + 2.16vh);
   overflow-x: hidden;
   overflow-y: auto;
   width: 100%;
@@ -76,12 +77,16 @@ a {
 /* ---- Shadows ---- */
 
 .top-shadow-stripes {
-  margin-top: calc(var(--header-height) - 2.5vh);
+  margin-top: calc(var(--header-height) - 2.9vh);
   height: var(--top-shadow-height);
   background-image: url("/images/shadowlineelement-180.svg");
   background-size: 8px;
   background-repeat: repeat-x;
 }
+.top-shadow-stripes-infoshift {
+  margin-top: var(--subnav-info-height);
+}
+
 .bottom-shadow-stripes {
   height: var(--top-shadow-height);
   background-image: url("/images/shadowlineelement.svg");
@@ -91,13 +96,19 @@ a {
 
 .real-shadow-top {
   position: absolute;
-  top: calc(var(--header-height) + 2.5vh);
+  top: calc(var(--header-height) + 1.9vh);
   width: 100%;
   height: var(--top-shadow-height);
   -moz-box-shadow: inset 0 3px 5px -3px var(--shadow-blur);
   -webkit-box-shadow: inset 0 3px 5px -3px var(--shadow-blur);
   box-shadow: inset 0 3px 5px -3px var(--shadow-blur);
 }
+
+.real-shadow-top-infoshift {
+  /* margin-top: var(--subnav-info-height); */
+  margin-top: 35px;
+}
+
 .real-shadow-bottom {
   position: absolute;
   top: calc(100vh - var(--bottom-nav-height) - var(--bottom-shadow-height));

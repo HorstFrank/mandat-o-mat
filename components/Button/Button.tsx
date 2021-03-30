@@ -5,10 +5,7 @@ export type ButtonType = {
   label?: string;
   value?: string | number;
   flavor?: string;
-  props?: DetailedHTMLProps<
-    AnchorHTMLAttributes<HTMLAnchorElement>,
-    HTMLAnchorElement
-  >;
+  props?: AnchorHTMLAttributes<HTMLAnchorElement>;
   handleClick?: React.MouseEventHandler<HTMLDivElement>;
 };
 
