@@ -3,12 +3,25 @@
   align-items: center; */
   text-align: center;
   color: var(--icon);
-  font-size: 0.8 rem;
+  font-size: 0.8rem;
   letter-spacing: 0.1em;
   padding-top: 2em;
 }
 
 .label {
-  font-size: 0.9rem;
-  margin-left: 0.5rem;
+  /* font-size: 0.9rem;
+  margin-left: 0.5rem; */
+  /* fill: var(--icon); */
+  text-anchor: middle;
+  font-family: "internet", Arial, Helvetica, sans-serif;
 }
+
+/*
+dy
+Shifts the text position vertically from a previous text element.
+
+class, style, font-family, font-size, font-size-adjust, font-stretch, font-style, font-variant, font-weight
+
+
+
+*/

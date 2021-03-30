@@ -10,4 +10,13 @@ export default {
 const Template: Story<DonutType> = (args) => <Donut {...args} />;
 
 export const DonutComp = Template.bind({});
-DonutComp.args = {};
+DonutComp.args = {
+  data: {
+    ABC: 20,
+    DEF: 40,
+    KNL: 20,
+    HIJ: 10,
+    EFG: 10,
+  },
+  primary: ["DEF"],
+};

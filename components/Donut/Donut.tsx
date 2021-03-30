@@ -4,12 +4,32 @@ import Icon from "../icons/Icons";
 import styles from "./Donut.module.css";
 
 export type DonutType = {
-  onClick?: React.MouseEventHandler<HTMLDivElement>;
+  data: object;
+  primary: array;
+  // onClick?: React.MouseEventHandler<HTMLDivElement>;
 };
 
-export default function Donut({ onClick }: DonutType) {
+export default function Donut({ data, primary }: DonutType) {
   const [modalstate, setmodalstate] = useState(false);
-  const rotate = (v) => `rotate(${166 * v},182,185)`;
+  const rotate = (v, ox = 182, oy = 185) => `rotate(${166 * v},${ox},${oy})`;
+
+  let percentWithLastpartys = 0;
+  let percentWithLastpartyslabel = 0;
+  // data = Object.keys(data).map((key) => {
+  //   // data[key].start = 2;
+  //   // const x = data[key];
+  //   return {
+  //     label: key,
+  //     value: data[key],
+  //     start: data[key],
+  //     end: data[key],
+  //   };
+  //   // return {
+  //   //   ...data[key],
+  //   //   start: 2,
+  //   //   end: 2,
+  //   // };
+  // });
 
   function clickHandler() {
     setmodalstate(!modalstate);
@@ -26,16 +46,68 @@ export default function Donut({ onClick }: DonutType) {
         // view-box="0 0 364 199"
         // enable-background="new 0 0 364 199"
       >
-        <line
-          transform={rotate(0.2)}
-          fill="none"
-          stroke="var(--primary)"
-          stroke-width="2"
-          x1="2"
-          y1="163"
-          x2="130"
-          y2="179"
-        />
+        {Object.keys(data).map((party) => {
+          percentWithLastpartys += data[party];
+          return (
+            <line
+              transform={rotate(percentWithLastpartys / 100)}
+              fill="none"
+              stroke="var(--primary)"
+              stroke-width="2"
+              x1="2"
+              y1="163"
+              x2="130"
+              y2="179"
+            />
+          );
+        })}
+
+        {Object.keys(data).map((party) => {
+          percentWithLastpartyslabel += data[party];
+          const fill = primary.includes(party)
+            ? "var(--primary)"
+            : "var(--icon)";
+          return (
+            <>
+              <g
+                transform={
+                  rotate(
+                    (percentWithLastpartyslabel - data[party] * 0.5) / 100
+                  ) +
+                  rotate(
+                    ((percentWithLastpartyslabel - data[party] * 0.5) / 100) *
+                      -1,
+                    67,
+                    171
+                  )
+                }
+              >
+                <g>
+                  <text
+                    className={styles.label}
+                    font-size={(data[party] / 100) * 6 + "rem"}
+                    fill={fill}
+                    x="67"
+                    y="171"
+                  >
+                    {party}
+                  </text>
+                  <text
+                    className={styles.label}
+                    font-size={(data[party] / 100) * 5 + "rem"}
+                    fill={fill}
+                    x="67"
+                    y="171"
+                    dy={(data[party] / 100) * 5.2 + "rem"}
+                  >
+                    {data[party]}%
+                  </text>
+                  {/* <circle cx="67" cy="171" r="2" fill="red" /> */}
+                </g>
+              </g>
+            </>
+          );
+        })}
 
         <path
           fill="none"
