@@ -1,13 +1,12 @@
 .container {
   display: flex;
   list-style: none;
+  /* background-color: red; */
   background-color: var(--menue-background);
   margin: 0;
   padding: 0;
   width: 100%;
   height: 2em;
-
-  /* column-gap: 2px; */
 }
 
 .container > li {
@@ -20,6 +19,10 @@
   height: 100%;
   display: grid;
   align-content: center;
+  margin: 7px 0 0 0;
+}
 
-  /* padding: 0.5em 0; */
+.svg {
+  margin: 0;
+  padding: 0;
 }

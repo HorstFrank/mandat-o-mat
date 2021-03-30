@@ -1,6 +1,4 @@
 import styles from "./Icons.module.css";
-// import { IconType } from "../../types/IconType";
-// import { SVGProps } from "react";
 
 export type IconProps = {
   kind?: string;
@@ -9,10 +7,6 @@ export type IconProps = {
   fill?: string;
   color?: string;
   className?: string;
-  // stroke?: string;
-  // strokeLinecap?: string;
-  // strokeLinejoin?: string;
-  // strokeWidth?: string;
   props?: object;
 };
 
@@ -33,6 +27,7 @@ export default function Icon({
       style={{ width: width, margin: margin }}
       viewBox="0 0 40 40"
     >
+      {/* -------- Close Icon -------- */}
       {props.kind === "close" && (
         <g transform="translate(0.5 0.5)">
           <circle
@@ -64,6 +59,7 @@ export default function Icon({
           </g>
         </g>
       )}
+      {/* -------- PDF Icon -------- */}
       {props.kind === "pdf" && (
         <g transform="translate(1 1)">
           <g transform="translate(4.948 7.563)">
@@ -90,7 +86,7 @@ export default function Icon({
           />
         </g>
       )}
-
+      {/* -------- Settings Icon -------- */}
       {props.kind === "settings" && (
         <g transform="translate(1 1)">
           <path
@@ -125,6 +121,7 @@ export default function Icon({
           />
         </g>
       )}
+      {/* -------- Info Icon -------- */}
       {props.kind === "info" && (
         <g>
           <g id="Icon_feather-info" transform="translate(1 1)">
@@ -147,6 +144,7 @@ export default function Icon({
           </g>
         </g>
       )}
+      {/* -------- result Icon -------- */}
       {props.kind === "result" && (
         <g>
           <g transform="translate(-122.286 -400.988)">
@@ -183,6 +181,7 @@ export default function Icon({
           </g>
         </g>
       )}
+      {/* -------- Question Icon -------- */}
       {props.kind === "question" && (
         <g>
           <g transform="translate(11.961 12.533)">
