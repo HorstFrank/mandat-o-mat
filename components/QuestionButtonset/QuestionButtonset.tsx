@@ -4,38 +4,46 @@ import styles from "./QuestionButtonset.module.css";
 
 export type qButtonSetType = {
   handleClick?: React.MouseEventHandler<HTMLDivElement>;
+  questionNumber: number;
 };
 
 function handleButtonClick(value) {
-  alert(value);
+  // alert(value);
+  // return value;
 }
 
-export default function QuestionButtonSet({ handleClick }: qButtonSetType) {
+export default function QuestionButtonSet({
+  handleClick,
+  questionNumber,
+}: qButtonSetType) {
   return (
     <div className={styles.container}>
       <div>
         <Button
           label="Ja"
           value="yes"
-          handleClick={handleButtonClick}
+          handleClick={handleClick}
           width="100px"
-          margin-right="1em"
+          marginRight="1em"
+          questionNumber={questionNumber}
         />
         <Button
           label="Nein"
           value="no"
-          handleClick={handleButtonClick}
+          handleClick={handleClick}
           width="100px"
+          questionNumber={questionNumber}
         />
       </div>
       <div>
         <Button
           label="Enthaltung"
           value="abstain"
-          handleClick={handleButtonClick}
+          handleClick={handleClick}
           flavor="flavor-filled"
           width="280px"
           margin-top="1em"
+          questionNumber={questionNumber}
         />
       </div>
     </div>

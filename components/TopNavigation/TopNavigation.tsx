@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, MouseEvent } from "react";
 import styles from "./TopNavigation.module.css";
 // import { txt } from "../../assets/utils/txt";
 import { createKeyLabelObjectFromTxtJson } from "../../assets/utils/createKeyLabelObjectFromTxtJson";
 
 export type TopNavigationProps = {
   selectKey: string;
-  handleClick?: React.MouseEvent<HTMLElement, MouseEvent>;
+  handleClick?: MouseEvent<HTMLElement, MouseEvent>;
 };
 
 export default function TopNavigation({

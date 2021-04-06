@@ -6,16 +6,16 @@ import { txt } from "../assets/utils/txt";
 import parse from "html-react-parser";
 
 export default function Home() {
-  const [state, setstate] = useState("thisapp");
+  const [topNavState, setTopNavSelection] = useState("thisapp");
 
   const handleClick = (selectKey) => {
-    setstate(selectKey);
+    setTopNavSelection(selectKey);
   };
 
   return (
     <div className={styles.container}>
       <TopNavigation selectKey="thisapp" handleClick={handleClick} />
-      <div>{parse(txt("infotext")[state])}</div>
+      <div>{parse(txt("infotext")[topNavState])}</div>
     </div>
   );
 }

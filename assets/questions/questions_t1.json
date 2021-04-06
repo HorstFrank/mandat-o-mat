@@ -1,0 +1,378 @@
+{
+  "1230": {
+    "id": 1237,
+    "legislature_id": 111,
+    "date": "2017-12-12",
+    "label": "Soll der Bundeswehreinsatz in Irak verlängert werden?",
+    "api_url_poll": "https://www.abgeordnetenwatch.de/api/v2/polls/1237",
+    "api_url_votes": "https://www.abgeordnetenwatch.de/api/v2/votes?poll[entity.id]=1237&range_end=999",
+    "intro": null,
+    "topic_id": {
+      "13": {
+        "id": 13,
+        "entity_type": "taxonomy_term",
+        "label": "Verteidigung",
+        "api_url": "https://www.abgeordnetenwatch.de/api/v2/topics/13",
+        "abgeordnetenwatch_url": "https://www.abgeordnetenwatch.de/themen-dip21/verteidigung",
+        "description": null,
+        "parent_id": null,
+        "child_id": null
+      },
+      "21": {
+        "id": 21,
+        "entity_type": "taxonomy_term",
+        "label": "Au\u00dfenpolitik und internationale Beziehungen",
+        "api_url": "https://www.abgeordnetenwatch.de/api/v2/topics/21",
+        "abgeordnetenwatch_url": "https://www.abgeordnetenwatch.de/themen-dip21/aussenpolitik-und-internationale-beziehungen",
+        "description": null,
+        "parent_id": null,
+        "child_id": null
+      }
+    },
+    "links": [],
+    "poll_result": {
+      "total": {
+        "yes": 435,
+        "no_show": 41,
+        "no": 196,
+        "abstain": 37
+      },
+      "fraction": {
+        "SPD": {
+          "yes": 128,
+          "no_show": 12,
+          "no": 9,
+          "abstain": 2
+        },
+        "empty": {
+          "yes": 3,
+          "no_show": 1,
+          "no": 2
+        },
+        "FDP": {
+          "yes": 76,
+          "no_show": 4
+        },
+        "CDU/CSU": {
+          "yes": 228,
+          "no_show": 15
+        },
+        "fraktionslos": {
+          "no_show": 1,
+          "no": 5
+        },
+        "DIE LINKE": {
+          "no_show": 5,
+          "no": 63
+        },
+        "DIE GR\u00dcNEN": {
+          "no_show": 1,
+          "no": 30,
+          "abstain": 35
+        },
+        "AfD": {
+          "no_show": 2,
+          "no": 87
+        }
+      },
+      "result": {
+        "regierung": {
+          "yes": 356,
+          "no_show": 27,
+          "no": 9,
+          "abstain": 2
+        },
+        "oppostion": {
+          "yes": 79,
+          "no_show": 14,
+          "no": 187,
+          "abstain": 35
+        }
+      }
+    },
+    "question": "Testfrage 1",
+    "question_date": "2021-03-20T16:02:05+01:00"
+  },
+  "1249": {
+    "id": 1240,
+    "legislature_id": 111,
+    "date": "2017-12-12",
+    "label": "Soll der Solidaritätsbeitrag abgeschafft werden?",
+    "api_url_poll": "https://www.abgeordnetenwatch.de/api/v2/polls/1240",
+    "api_url_votes": "https://www.abgeordnetenwatch.de/api/v2/votes?poll[entity.id]=1240&range_end=999",
+    "intro": null,
+    "topic_id": {
+      "13": {
+        "id": 13,
+        "entity_type": "taxonomy_term",
+        "label": "Verteidigung",
+        "api_url": "https://www.abgeordnetenwatch.de/api/v2/topics/13",
+        "abgeordnetenwatch_url": "https://www.abgeordnetenwatch.de/themen-dip21/verteidigung",
+        "description": null,
+        "parent_id": null,
+        "child_id": null
+      },
+      "21": {
+        "id": 21,
+        "entity_type": "taxonomy_term",
+        "label": "Au\u00dfenpolitik und internationale Beziehungen",
+        "api_url": "https://www.abgeordnetenwatch.de/api/v2/topics/21",
+        "abgeordnetenwatch_url": "https://www.abgeordnetenwatch.de/themen-dip21/aussenpolitik-und-internationale-beziehungen",
+        "description": null,
+        "parent_id": null,
+        "child_id": null
+      }
+    },
+    "links": [],
+    "poll_result": {
+      "total": {
+        "yes": 504,
+        "no_show": 43,
+        "no": 158,
+        "abstain": 4
+      },
+      "fraction": {
+        "SPD": {
+          "yes": 135,
+          "no_show": 13,
+          "no": 3
+        },
+        "empty": {
+          "yes": 4,
+          "no_show": 1,
+          "no": 1
+        },
+        "FDP": {
+          "yes": 73,
+          "no_show": 7
+        },
+        "DIE GR\u00dcNEN": {
+          "yes": 61,
+          "no_show": 1,
+          "no": 1,
+          "abstain": 3
+        },
+        "CDU/CSU": {
+          "yes": 231,
+          "no_show": 12
+        },
+        "fraktionslos": {
+          "no_show": 1,
+          "no": 4,
+          "abstain": 1
+        },
+        "DIE LINKE": {
+          "no_show": 5,
+          "no": 63
+        },
+        "AfD": {
+          "no_show": 3,
+          "no": 86
+        }
+      },
+      "result": {
+        "regierung": {
+          "yes": 366,
+          "no_show": 25,
+          "no": 3
+        },
+        "oppostion": {
+          "yes": 138,
+          "no_show": 18,
+          "no": 155,
+          "abstain": 4
+        }
+      }
+    },
+    "question": "Testfrage 2",
+    "question_date": "2021-03-20T16:02:16+01:00"
+  },
+  "1237": {
+    "id": 1237,
+    "legislature_id": 111,
+    "date": "2017-12-12",
+    "label": "Sollen die Diäten erhöht werden?",
+    "api_url_poll": "https://www.abgeordnetenwatch.de/api/v2/polls/1237",
+    "api_url_votes": "https://www.abgeordnetenwatch.de/api/v2/votes?poll[entity.id]=1237&range_end=999",
+    "intro": null,
+    "topic_id": {
+      "13": {
+        "id": 13,
+        "entity_type": "taxonomy_term",
+        "label": "Verteidigung",
+        "api_url": "https://www.abgeordnetenwatch.de/api/v2/topics/13",
+        "abgeordnetenwatch_url": "https://www.abgeordnetenwatch.de/themen-dip21/verteidigung",
+        "description": null,
+        "parent_id": null,
+        "child_id": null
+      },
+      "21": {
+        "id": 21,
+        "entity_type": "taxonomy_term",
+        "label": "Au\u00dfenpolitik und internationale Beziehungen",
+        "api_url": "https://www.abgeordnetenwatch.de/api/v2/topics/21",
+        "abgeordnetenwatch_url": "https://www.abgeordnetenwatch.de/themen-dip21/aussenpolitik-und-internationale-beziehungen",
+        "description": null,
+        "parent_id": null,
+        "child_id": null
+      }
+    },
+    "links": [],
+    "poll_result": {
+      "total": {
+        "yes": 435,
+        "no_show": 41,
+        "no": 196,
+        "abstain": 37
+      },
+      "fraction": {
+        "SPD": {
+          "yes": 128,
+          "no_show": 12,
+          "no": 9,
+          "abstain": 2
+        },
+        "empty": {
+          "yes": 3,
+          "no_show": 1,
+          "no": 2
+        },
+        "FDP": {
+          "yes": 76,
+          "no_show": 4
+        },
+        "CDU/CSU": {
+          "yes": 228,
+          "no_show": 15
+        },
+        "fraktionslos": {
+          "no_show": 1,
+          "no": 5
+        },
+        "DIE LINKE": {
+          "no_show": 5,
+          "no": 63
+        },
+        "DIE GR\u00dcNEN": {
+          "no_show": 1,
+          "no": 30,
+          "abstain": 35
+        },
+        "AfD": {
+          "no_show": 2,
+          "no": 87
+        }
+      },
+      "result": {
+        "regierung": {
+          "yes": 356,
+          "no_show": 27,
+          "no": 9,
+          "abstain": 2
+        },
+        "oppostion": {
+          "yes": 79,
+          "no_show": 14,
+          "no": 187,
+          "abstain": 35
+        }
+      }
+    },
+    "question": "Testfrage 1",
+    "question_date": "2021-03-20T16:02:05+01:00"
+  },
+  "1240": {
+    "id": 1240,
+    "legislature_id": 111,
+    "date": "2017-12-12",
+    "label": "Soll die Polizei mehr Befugnisse bekommen?",
+    "api_url_poll": "https://www.abgeordnetenwatch.de/api/v2/polls/1240",
+    "api_url_votes": "https://www.abgeordnetenwatch.de/api/v2/votes?poll[entity.id]=1240&range_end=999",
+    "intro": null,
+    "topic_id": {
+      "13": {
+        "id": 13,
+        "entity_type": "taxonomy_term",
+        "label": "Verteidigung",
+        "api_url": "https://www.abgeordnetenwatch.de/api/v2/topics/13",
+        "abgeordnetenwatch_url": "https://www.abgeordnetenwatch.de/themen-dip21/verteidigung",
+        "description": null,
+        "parent_id": null,
+        "child_id": null
+      },
+      "21": {
+        "id": 21,
+        "entity_type": "taxonomy_term",
+        "label": "Au\u00dfenpolitik und internationale Beziehungen",
+        "api_url": "https://www.abgeordnetenwatch.de/api/v2/topics/21",
+        "abgeordnetenwatch_url": "https://www.abgeordnetenwatch.de/themen-dip21/aussenpolitik-und-internationale-beziehungen",
+        "description": null,
+        "parent_id": null,
+        "child_id": null
+      }
+    },
+    "links": [],
+    "poll_result": {
+      "total": {
+        "yes": 504,
+        "no_show": 43,
+        "no": 158,
+        "abstain": 4
+      },
+      "fraction": {
+        "SPD": {
+          "yes": 135,
+          "no_show": 13,
+          "no": 3
+        },
+        "empty": {
+          "yes": 4,
+          "no_show": 1,
+          "no": 1
+        },
+        "FDP": {
+          "yes": 73,
+          "no_show": 7
+        },
+        "DIE GR\u00dcNEN": {
+          "yes": 61,
+          "no_show": 1,
+          "no": 1,
+          "abstain": 3
+        },
+        "CDU/CSU": {
+          "yes": 231,
+          "no_show": 12
+        },
+        "fraktionslos": {
+          "no_show": 1,
+          "no": 4,
+          "abstain": 1
+        },
+        "DIE LINKE": {
+          "no_show": 5,
+          "no": 63
+        },
+        "AfD": {
+          "no_show": 3,
+          "no": 86
+        }
+      },
+      "result": {
+        "regierung": {
+          "yes": 366,
+          "no_show": 25,
+          "no": 3
+        },
+        "oppostion": {
+          "yes": 138,
+          "no_show": 18,
+          "no": 155,
+          "abstain": 4
+        }
+      }
+    },
+    "question": "Testfrage 2",
+    "question_date": "2021-03-20T16:02:16+01:00"
+  }
+}

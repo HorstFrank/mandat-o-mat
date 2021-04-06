@@ -9,7 +9,7 @@ export type QuestionType = {
 export default function Question({ value }: QuestionType) {
   return (
     <div className={styles.container}>
-      <div className={styles.question}>Frage</div>
+      <div className={styles.question}>{value}</div>
       <div className={styles["question-info"]}>
         {txtFindReplace(txt("question")["date"], {
           kind: "Bundestagsabstimmung",

@@ -19,7 +19,7 @@ export default function QuestionState({
         f1: questionNumber,
         f2: questionTotal,
       })}
-      <Progressbar />
+      <Progressbar progress={questionNumber / questionTotal} />
     </div>
   );
 }
