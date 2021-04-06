@@ -1,14 +1,19 @@
 .container {
-  /* display: flex;
-  align-items: center; */
   text-align: center;
   color: var(--icon);
-  font-size: 0.8 rem;
+  font-size: 0.8rem;
   letter-spacing: 0.1em;
   padding-top: 2em;
 }
 
 .label {
-  font-size: 0.9rem;
-  margin-left: 0.5rem;
+  text-anchor: middle;
+  font-family: "internet", Arial, Helvetica, sans-serif;
+}
+
+.label-outline {
+  fill: none;
+  stroke: var(--base-background);
+  stroke-width: 6;
+  stroke-linecap: "round";
 }
