@@ -1,11 +1,18 @@
-import React, { AnchorHTMLAttributes, DetailedHTMLProps } from "react";
+import React, {
+  AnchorHTMLAttributes,
+  CSSProperties,
+  DetailedHTMLProps,
+} from "react";
 import styles from "./Button.module.css";
 
 export type ButtonType = {
   label?: string;
   value?: string | number;
   flavor?: string;
-  props?: AnchorHTMLAttributes<HTMLAnchorElement>;
+  questionNumber: number;
+  // width?: string;
+  props?: string;
+
   handleClick?: React.MouseEventHandler<HTMLDivElement>;
 };
 
@@ -14,6 +21,7 @@ export default function Button({
   value = `Value of ${label}`,
   flavor = "flavor-primary",
   handleClick,
+  questionNumber,
   ...props
 }: ButtonType) {
   if (props && typeof props.width !== "undefined") {
@@ -24,7 +32,9 @@ export default function Button({
     <a
       className={`${styles.btn} ${styles[flavor]}`}
       href="#"
-      onClick={() => handleClick(value)}
+      onClick={() =>
+        handleClick({ usrVote: value, questionId: questionNumber })
+      }
       style={{ ...props }}
     >
       {label}
