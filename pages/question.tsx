@@ -104,11 +104,13 @@ function questionset(
         questionNumber={questionNumber}
         questionTotal={questionTotal}
       />
+
       <Question value={questionLabel} />
+
       <QuestionPDFLink onClick={clickHandler} />
       <QuestionButtonSet
         handleClick={clickHandlerResult}
-        questionNumber={questionIds[questionNumber]}
+        questionNumber={+questionIds[questionNumber]}
       />
       <QuestionPDFmodal
         url={pdfUrl}

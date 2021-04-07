@@ -1,19 +1,21 @@
 import React, {
   AnchorHTMLAttributes,
-  CSSProperties,
   DetailedHTMLProps,
+  StyleHTMLAttributes,
 } from "react";
 import styles from "./Button.module.css";
+import * as CSS from "csstype";
 
 export type ButtonType = {
   label?: string;
   value?: string | number;
   flavor?: string;
   questionNumber: number;
-  // width?: string;
+  handleClick?: ({ usrVote: value, questionId: questionNumber }) => void;
+  // props?: StyleHTMLAttributes<T>;
+  // props?: CSS.Properties;
   props?: string;
-
-  handleClick?: React.MouseEventHandler<HTMLDivElement>;
+  width?: string;
 };
 
 export default function Button({
@@ -29,15 +31,14 @@ export default function Button({
     props["text-align"] = "center";
   }
   return (
-    <a
+    <span
       className={`${styles.btn} ${styles[flavor]}`}
-      href="#"
       onClick={() =>
         handleClick({ usrVote: value, questionId: questionNumber })
       }
       style={{ ...props }}
     >
       {label}
-    </a>
+    </span>
   );
 }

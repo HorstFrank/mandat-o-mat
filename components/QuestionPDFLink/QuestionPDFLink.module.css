@@ -3,9 +3,10 @@
   align-items: center; */
   text-align: center;
   color: var(--icon);
-  font-size: 0.8 rem;
+  font-size: 0.8rem;
   letter-spacing: 0.1em;
   padding-top: 2em;
+  height: 10vh;
 }
 
 .label {

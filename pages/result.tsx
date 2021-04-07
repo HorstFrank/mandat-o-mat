@@ -3,12 +3,12 @@ import { txt, txtFindReplace } from "../assets/utils/txt";
 import styles from "../styles/result.module.css";
 import Donut from "../components/Donut/Donut";
 
-const getJsonItem = (v) => JSON.parse(localStorage.getItem(v));
-const sumValues = (obj) => Object.values(obj).reduce((a, b) => a + b);
+const getJsonItem = (v: string) => JSON.parse(localStorage.getItem(v));
+const sumValues = (obj: object) => Object.values(obj).reduce((a, b) => a + b);
 
 export default function Result() {
   const [usrResult, setUsrResult] = useState(getJsonItem("usrResult"));
-  const [percent, setPercent] = useState({ "": 100 });
+  const [percent, setPercent] = useState<object>({ "": 100 });
   const [draworder, setDraworder] = useState(null);
   const [primary, setPrimary] = useState([]);
   const [maxValue, setMaxvalue] = useState(100);
@@ -19,7 +19,7 @@ export default function Result() {
     const sumOfVotes = mergeUserVotes(usrResult.map((e) => e.ratio));
     const percent = createPercentOfValues(sumOfVotes, 100);
     const drawOrderArray = reOrderFractions(percent).map((i) => i.key);
-    const maxValue = Math.max(...Object.values(percent));
+    const maxValue = Math.max(...Object.values<number>(percent));
 
     setPercent(percent);
     setDraworder(drawOrderArray);

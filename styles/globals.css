@@ -7,6 +7,7 @@
 * {
   /* ------ COLORS ------ */
   --primary: #ffcf05;
+  --primary-dark: #dfb306;
   --shadow: #252525;
   --shadow-blur: #000000;
   --deep-focus: #303030;
@@ -15,6 +16,7 @@
   --context-background: #606060;
   --menue-background: #535353;
   --icon: #c2c2c2;
+  --icon-dark: #a5a4a4;
   --text: #cfcfcf;
   --text-highlight: #f3f3f3;
 
@@ -35,6 +37,13 @@
   /* ------ TopNavLine ------ */
   /* --unselected-width: 1;
   --selected-width: 2; */
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 html,

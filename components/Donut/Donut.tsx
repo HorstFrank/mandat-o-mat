@@ -7,7 +7,7 @@ import styles from "./Donut.module.css";
 // }
 
 export type DonutType = {
-  data: Record<string, unknown>;
+  data: object;
   primary: string[];
   draworder: string[];
   decimalPlaces: number;

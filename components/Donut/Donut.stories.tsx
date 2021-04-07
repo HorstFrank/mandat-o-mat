@@ -12,13 +12,13 @@ const Template: Story<DonutType> = (args) => <Donut {...args} />;
 export const DonutComp = Template.bind({});
 DonutComp.args = {
   data: {
-    ABC: 20,
+    "AB/C": 20,
     DEF: 40,
     KNL: 20,
     HIJ: 10,
     EFG: 10,
   },
   primary: ["DEF"],
-  draworder: ["ABC", "KNL", "DEF", "HIJ", "EFG"],
+  draworder: ["AB/C", "KNL", "DEF", "HIJ", "EFG"],
   decimalPlaces: 1,
 };

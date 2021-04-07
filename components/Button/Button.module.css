@@ -1,12 +1,17 @@
 .btn {
   border-radius: 100px;
   padding: 0.8em 2em 0.8em 2em;
-  width: 700px;
+  /* width: 700px; */
+  cursor: pointer;
 }
 
 .flavor-primary {
   color: var(--base-background);
   background-color: var(--primary);
+}
+
+.flavor-primary:active {
+  background-color: var(--primary-dark);
 }
 
 .flavor-empty {
@@ -18,4 +23,7 @@
 .flavor-filled {
   color: var(--base-background);
   background-color: var(--icon);
+}
+.flavor-filled:active {
+  background-color: var(--icon-dark);
 }

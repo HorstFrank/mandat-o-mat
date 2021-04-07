@@ -5,7 +5,7 @@ import { createKeyLabelObjectFromTxtJson } from "../../assets/utils/createKeyLab
 
 export type TopNavigationProps = {
   selectKey: string;
-  handleClick?: MouseEvent<HTMLElement, MouseEvent>;
+  handleClick?: (key: string) => void;
 };
 
 export default function TopNavigation({
@@ -16,7 +16,7 @@ export default function TopNavigation({
 
   const nav = createKeyLabelObjectFromTxtJson("topnav");
 
-  function handleInteraction(key) {
+  function handleInteraction(key: string) {
     handleClick(key);
     setLinestatus(key);
   }

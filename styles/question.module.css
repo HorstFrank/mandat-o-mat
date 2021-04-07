@@ -1,5 +1,24 @@
 .container {
+  /* background-color: brown; */
   /* height: 50%; */
   /* margin: auto 0; */
-  padding: 30px 40px 40px 40px;
+  /* padding: 30px 40px 40px 40px; */
+  /* height: calc(100vh - var(--header-height) - var(--bottom-nav-height)); */
+  /* height: 100vh; */
+  /* margin: 5vh 10vw 20vh 10vw; */
+  padding: 5vh 10vw 0 10vw;
+  /* height: 100%; */
+  display: grid;
+  grid-template-rows: auto 300px;
+  /* display: flex;
+  flex-direction: column; */
 }
+
+/*
+  --header-height: 5vh;
+  --bottom-nav-height: 10vh;
+  --top-shadow-height: 20px;
+  --bottom-shadow-height: 20px;
+  --subnav-info-height: 50px;
+
+*/
