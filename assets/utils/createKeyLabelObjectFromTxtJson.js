@@ -1,9 +1,10 @@
 import { txt } from "./txt";
+import txtjson from "../json/text.json";
 
 export function createKeyLabelObjectFromTxtJson(txtJsonsonKey) {
-  return Object.keys(txt(txtJsonsonKey)).map((txtdata) => {
+  return Object.keys(txtjson[txtJsonsonKey]).map((txtdata) => {
     return {
-      label: txt(txtJsonsonKey)[txtdata],
+      label: txtjson[txtJsonsonKey][txtdata],
       key: txtdata,
     };
   });

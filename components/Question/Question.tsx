@@ -1,6 +1,7 @@
 import React from "react";
-import { txt, txtFindReplace } from "../../assets/utils/txt";
 import styles from "./Question.module.css";
+import txtjson from "../../assets/json/text.json";
+import { txt } from "../../assets/utils/txt";
 
 export type QuestionType = {
   value: string;
@@ -11,7 +12,7 @@ export default function Question({ value }: QuestionType) {
     <div className={styles.container}>
       <div className={styles.question}>{value}</div>
       <div className={styles["question-info"]}>
-        {txtFindReplace(txt("question")["date"], {
+        {txt(txtjson.question.date, {
           kind: "Bundestagsabstimmung",
           date: "20. Januar 2021",
         })}

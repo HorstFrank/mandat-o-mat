@@ -2,13 +2,14 @@ import React, { useEffect, useState } from "react";
 import { txt, txtFindReplace } from "../assets/utils/txt";
 import styles from "../styles/result.module.css";
 import Donut from "../components/Donut/Donut";
+import txtjson from "../assets/json/text.json";
 
-const getJsonItem = (v) => JSON.parse(localStorage.getItem(v));
-const sumValues = (obj) => Object.values(obj).reduce((a, b) => a + b);
+const getJsonItem = (v: string) => JSON.parse(localStorage.getItem(v));
+const sumValues = (obj: object) => Object.values(obj).reduce((a, b) => a + b);
 
 export default function Result() {
   const [usrResult, setUsrResult] = useState(getJsonItem("usrResult"));
-  const [percent, setPercent] = useState({ "": 100 });
+  const [percent, setPercent] = useState<object>({ "": 100 });
   const [draworder, setDraworder] = useState(null);
   const [primary, setPrimary] = useState([]);
   const [maxValue, setMaxvalue] = useState(100);
@@ -19,7 +20,7 @@ export default function Result() {
     const sumOfVotes = mergeUserVotes(usrResult.map((e) => e.ratio));
     const percent = createPercentOfValues(sumOfVotes, 100);
     const drawOrderArray = reOrderFractions(percent).map((i) => i.key);
-    const maxValue = Math.max(...Object.values(percent));
+    const maxValue = Math.max(...Object.values<number>(percent));
 
     setPercent(percent);
     setDraworder(drawOrderArray);
@@ -46,15 +47,25 @@ export default function Result() {
       {!isCalculated && createNotEnoughData()}
       {isCalculated && (
         <>
-          <div
+          {/* <div
             className={styles.result}
             dangerouslySetInnerHTML={{
-              __html: txtFindReplace(txt("result").result.content, {
+              __html: txt(txtjson.result.result.content, {
                 p: maxValue.toFixed(1),
                 fraction: primary.join(", "),
               }),
             }}
-          ></div>
+          ></div> */}
+          <div className={styles.result}>
+            {txt(txtjson.result.result.content, {
+              p: `<span class=${styles["result-primary"]}>${maxValue.toFixed(
+                1
+              )}%</span>`,
+              fraction: `<span class=${styles["result-primary"]}>${primary.join(
+                ", "
+              )}</span>`,
+            })}
+          </div>
           <div>
             <Donut
               data={percent}

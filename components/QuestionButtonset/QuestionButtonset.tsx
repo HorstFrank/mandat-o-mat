@@ -3,7 +3,7 @@ import Button from "../Button/Button";
 import styles from "./QuestionButtonset.module.css";
 
 export type qButtonSetType = {
-  handleClick?: React.MouseEventHandler<HTMLDivElement>;
+  handleClick?: ({ usrVote: value, questionId: questionNumber }) => void;
   questionNumber: number;
 };
 
@@ -24,7 +24,7 @@ export default function QuestionButtonSet({
           value="yes"
           handleClick={handleClick}
           width="100px"
-          marginRight="1em"
+          margin-right="1em"
           questionNumber={questionNumber}
         />
         <Button

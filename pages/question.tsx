@@ -7,6 +7,7 @@ import QuestionState from "../components/QuestionState/QuestionState";
 
 import styles from "../styles/question.module.css";
 import gdata from "../assets/json/polls_ag_questions 2.json";
+import txtjson from "../assets/json/text.json";
 
 const questionIds = Object.keys(gdata);
 const question = (n) => gdata[questionIds[n]];
@@ -104,11 +105,13 @@ function questionset(
         questionNumber={questionNumber}
         questionTotal={questionTotal}
       />
+
       <Question value={questionLabel} />
+
       <QuestionPDFLink onClick={clickHandler} />
       <QuestionButtonSet
         handleClick={clickHandlerResult}
-        questionNumber={questionIds[questionNumber]}
+        questionNumber={+questionIds[questionNumber]}
       />
       <QuestionPDFmodal
         url={pdfUrl}

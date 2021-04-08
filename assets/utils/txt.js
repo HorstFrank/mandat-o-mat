@@ -1,19 +1,13 @@
 import txtjson from "../json/text.json";
 
-// export function txt(key, frObject) {
-//   if (typeof txtjson[key] === "string") {
-//     return txtFindReplace(txtjson[key], frObject);
-//   }
-
-//   if (typeof txtjson[key] === "object") {
-//     return txtjson[key] = txtjson[key].map((v,k) =>{
-
-//     })
-//   }
-// }
-
-export function txt(key, frObject) {
-  return frObject ? txtFindReplace(txtjson[key], frObject) : txtjson[key];
+export function txt(src, frObject) {
+  return (
+    <span
+      dangerouslySetInnerHTML={{
+        __html: frObject ? txtFindReplace(src, frObject) : src,
+      }}
+    ></span>
+  );
 }
 
 export function txtFindReplace(src, replaceObject) {

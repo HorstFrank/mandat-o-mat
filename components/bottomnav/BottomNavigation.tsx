@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 import Icon from "../icons/Icons";
 import styles from "./BottomNavigation.module.css";
-import { txt } from "../../assets/utils/txt";
+import txtjson from "../../assets/json/text.json";
 
 export type BottomNavigationProps = {
   activeLink: string;
@@ -13,7 +13,7 @@ const buttons = ["question", "result", "info", "settings"];
 const navLinks = buttons.map((navlink) => {
   return {
     uri: "/" + navlink,
-    label: txt("buttonlabel")[navlink],
+    label: txtjson.buttonlabel[navlink],
     icon: navlink,
   };
 });
