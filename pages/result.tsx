@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { txt, txtFindReplace } from "../assets/utils/txt";
 import styles from "../styles/result.module.css";
 import Donut from "../components/Donut/Donut";
+import txtjson from "../assets/json/text.json";
 
 const getJsonItem = (v: string) => JSON.parse(localStorage.getItem(v));
 const sumValues = (obj: object) => Object.values(obj).reduce((a, b) => a + b);
@@ -46,15 +47,25 @@ export default function Result() {
       {!isCalculated && createNotEnoughData()}
       {isCalculated && (
         <>
-          <div
+          {/* <div
             className={styles.result}
             dangerouslySetInnerHTML={{
-              __html: txtFindReplace(txt("result").result.content, {
+              __html: txt(txtjson.result.result.content, {
                 p: maxValue.toFixed(1),
                 fraction: primary.join(", "),
               }),
             }}
-          ></div>
+          ></div> */}
+          <div className={styles.result}>
+            {txt(txtjson.result.result.content, {
+              p: `<span class=${styles["result-primary"]}>${maxValue.toFixed(
+                1
+              )}%</span>`,
+              fraction: `<span class=${styles["result-primary"]}>${primary.join(
+                ", "
+              )}</span>`,
+            })}
+          </div>
           <div>
             <Donut
               data={percent}

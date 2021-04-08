@@ -11,30 +11,14 @@
     "imprint": "Impressum"
   },
   "infotext": {
-    "thisapp": "Dies ist der Text zu diese App",
-    "privacy": "Dies ist der Text zum Datenschutz",
-    "imprint": "Dies ist der text zum Impressum"
+    "thisapp": "… ist eine Entscheidungshilfe, wenn du nicht genau weisst, welche Partei du wählen willst oder sollst. Im Gegensatz zu herkömmlichen Wahlomaten müssen hier die gleichen Fragen beantwortet werden, über die auch die Mandatsträger der auslaufenden Legislatur abgestimmt haben.<br><br>Du schlüpfst also für diesen Moment in die Rolle eines Parlamentariers und stimmst ab. Dein Abstimmungsverhalten wird mit den echten Abstimmungen verglichen. Nach etwa XX Fragen lässt sich errechnen, zu welcher Fraktion du auf Grund deiner Antworten du gehören würdest.  Also mit welcher Partei du die größte Übereinstimmung hast.<br>(Scheiße formuliert … ändere ich alles noch :D )<br><br>Was ist an dieser App…<br><br>… gut?<br><br>Diese App nimmt keine Rücksicht auf versprechen in Wahlprogrammen. Sie gleicht deine Meinung mit dem Abstimmungs-<br>verhalten der Parlamentarier ab. <br>Denn das Wahlprogramm spiegelt oft nicht das Abstimmungsverhalten wider.<br><br>… schlecht?<br><br>Diese App  führt dazu, dass nur Parteien empfohlen werden, die schon im Bundestag sitzen. Viele kleine Partien werden nicht berücksichtigt aber gerade durch diese Kleinen Parteien lebt eine Demokratie. Darum wirst du am Ende auch angehalten, dich über die kleineren Parteien zu Informieren.",
+    "privacy": "Das wichtigste in Kürze:- Es werden keine Abstimmungs-<br>  daten auf deinem Gerät oder  unserem Server gespeichert.<br>- Es werden keine Persönlichen<br>  Daten auf deinem Gerät gespeichert<br>- Es werden keine Daten an unseren<br>  Server gesendet.<br><br>Cookies & Lokaler Speicher<br><br>Diese App setzt keine Cookies und nutzt nicht den Lokalen Speicher deines Browsers. Insbesondere werden keine Daten über deine Antworten gespeichert oder gesendet.<br><br>Google Fonts<br><br>Es werden keine Fonts beim start der WebApp von einem Fontserver runtergeladen. Weder von Google noch von einem anderen Fontserver. Es erfolgt als KEIN Font-Tracking.<br><br>Facebook / Instagram / Twitter & Co <br><br>Es gesteht keine Anbindung an irgendwelche Sozialen Plattformen in dieser App. Er erfolgt also KEIN Tracking durch diese Dienste, wenn du diese App benutzt.<br><br>Speicherung deiner IP-Adresse<br><br>KEINE SPEICHERUNG, BIS AUF DIE GESETZLICH VORGESCHRIEBENE<br>ed diam voluptua. At vero eos et accusam et justo duo dolores et ea r",
+    "imprint": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliqb uyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"
   },
   "intro": {
-    "welcome": {
-      "label": "Willkommen",
-      "content": "Du willst sicher gleich loslegen mit den Fragen. Doch vorher solltest du einiges über diese App wissen."
-    },
-    "thisapp": {
-      "label": "Warum ist diese App schlecht?",
-      "content": "Das Prinzip dieser App führt dazu, dass nur die etablierten Parteien berücksichtigt werden."
-    },
-    "good": {
-      "label": "Warum ist diese App gut?",
-      "content": "Diese App nimmt das Abstimmungsverhalten der Parteien als Basis. Nicht das Parteiprogramm oder ein Wahlomatfragebogen."
-    },
-    "privacy": {
-      "label": "Datenschutz",
-      "content": "sea takimata sanctus est Lorem ipsum dolor sit amet.eirmod tempor invidunt ut labore et dolore magna aliquyam "
-    }
-  },
-  "intro_checkbox": {
-    "check": "Ich habe mir den Text nicht durchgelesen und klicke einfach alle Felder an, damit es endlich weitergeht."
+    "welcome": "<h2>Willkommen</h2> Du willst sicher gleich loslegen mit den Fragen. Doch vorher solltest du einiges über diese App wissen. <h2>WARUM IST DIESE APP SCHLECHT</h2>. Das Prinzip dieser App führt dazu, dass nur die etablierten Parteien berücksichtigt werden. <h2>WARUM SIE GUT IST</h2> Diese App nimmt das Abstimmungsverhalten der Parteien als Basis. Nicht das Parteiprogramm oder ein Wahlomatfragebogen. <h2>DATENSCHUTZ</h2> BLA sea takimata sanctus est Lorem ipsum dolor sit amet.eirmod tempor invidunt ut labore et dolore magna aliquyam.",
+    "check": "Ich habe mir den Text nicht durchgelesen und klicke einfach alle Felder an, damit es endlich weitergeht.",
+    "buttonlabel": "xxxx"
   },
   "buttons": {
     "xxx": "Weiter",
@@ -63,7 +47,7 @@
     },
     "result": {
       "label": "Auswertung",
-      "content": "Deine Antworten hatten eine <br/><span class='primarycolor'>##p##%</span><br/>Übereinstimmung mit den<br/>Abstimmungen der <br/><span class='primarycolor'>##fraction##</span>"
+      "content": "Deine Antworten hatten eine <br/><span class='primarycolor'>##p##</span><br/>Übereinstimmung mit den<br/>Abstimmungen der <br/><span class='primarycolor'>##fraction##</span>"
     }
   }
 }

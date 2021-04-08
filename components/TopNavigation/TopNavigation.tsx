@@ -1,7 +1,6 @@
-import React, { useState, MouseEvent } from "react";
+import React, { useState } from "react";
 import styles from "./TopNavigation.module.css";
-// import { txt } from "../../assets/utils/txt";
-import { createKeyLabelObjectFromTxtJson } from "../../assets/utils/createKeyLabelObjectFromTxtJson";
+import txtjson from "../../assets/json/text.json";
 
 export type TopNavigationProps = {
   selectKey: string;
@@ -47,4 +46,13 @@ export default function TopNavigation({
       })}
     </ul>
   );
+}
+
+function createKeyLabelObjectFromTxtJson(txtJsonsonKey) {
+  return Object.keys(txtjson[txtJsonsonKey]).map((txtdata) => {
+    return {
+      label: txtjson[txtJsonsonKey][txtdata],
+      key: txtdata,
+    };
+  });
 }

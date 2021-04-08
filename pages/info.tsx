@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import TopNavigation from "../components/TopNavigation/TopNavigation";
 import styles from "../styles/info.module.css";
 import { txt } from "../assets/utils/txt";
+import txtjson from "../assets/json/text.json";
 
 import parse from "html-react-parser";
 
@@ -15,7 +16,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <TopNavigation selectKey="thisapp" handleClick={handleClick} />
-      <div>{parse(txt("infotext")[topNavState])}</div>
+      <div>{txt(txtjson.infotext[topNavState])}</div>
     </div>
   );
 }

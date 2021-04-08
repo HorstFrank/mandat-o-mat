@@ -33,6 +33,6 @@
   text-align: center;
 }
 
-.result span {
+.result-primary {
   color: var(--primary);
 }

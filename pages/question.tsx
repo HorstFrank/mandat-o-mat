@@ -7,6 +7,7 @@ import QuestionState from "../components/QuestionState/QuestionState";
 
 import styles from "../styles/question.module.css";
 import gdata from "../assets/json/polls_ag_questions 2.json";
+import txtjson from "../assets/json/text.json";
 
 const questionIds = Object.keys(gdata);
 const question = (n) => gdata[questionIds[n]];

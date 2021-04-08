@@ -3,6 +3,7 @@ import { txt, txtFindReplace } from "../../assets/utils/txt";
 import Progressbar from "../Progressbar/Progressbar";
 import { progressbar } from "../Progressbar/Progressbar.stories";
 import styles from "./QuestionState.module.css";
+import txtjson from "../../assets/json/text.json";
 
 export type QuestionStateType = {
   questionNumber: number;
@@ -15,7 +16,7 @@ export default function QuestionState({
 }: QuestionStateType) {
   return (
     <div className={styles.container}>
-      {txtFindReplace(txt("question")["state"], {
+      {txt(txtjson.question.state, {
         f1: questionNumber,
         f2: questionTotal,
       })}
