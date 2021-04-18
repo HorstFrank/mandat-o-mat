@@ -1,5 +1,3 @@
-import styles from "./Shadowline.module.css";
-
 export type ShadowlineProps = {
   fill?: string;
 };

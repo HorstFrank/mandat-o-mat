@@ -9,7 +9,7 @@
   --primary: #ffcf05;
   --primary-dark: #dfb306;
   --shadow: #252525;
-  --shadow-blur: #000000;
+  --shadow-blur: #000;
   --deep-focus: #303030;
   --deep-border: #383838;
   --base-background: #424242;
@@ -35,6 +35,7 @@
   --close-icon-width: 2.5rem;
 
   /* ------ TopNavLine ------ */
+  
   /* --unselected-width: 1;
   --selected-width: 2; */
 

@@ -29,6 +29,5 @@
 .close-button {
   position: absolute;
   top: calc(var(--close-icon-width) * -0.7);
-  /* left: calc(100vw - var(--pdf-mod-margin-right)); */
   left: calc(100% - (var(--close-icon-width) * 0.5));
 }
