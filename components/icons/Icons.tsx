@@ -7,7 +7,7 @@ export type IconProps = {
   fill?: string;
   color?: string;
   className?: string;
-  props?: object;
+  props?: Record<string, string>;
 };
 
 export default function Icon({

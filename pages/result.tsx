@@ -4,12 +4,12 @@ import styles from "../styles/result.module.css";
 import Donut from "../components/Donut/Donut";
 import txtjson from "../assets/json/text.json";
 
-const getJsonItem = (v: string) => JSON.parse(localStorage.getItem(v));
-const sumValues = (obj: object) => Object.values(obj).reduce((a, b) => a + b);
+const getJsonItem = (v) => JSON.parse(localStorage.getItem(v));
+const sumValues = (obj) => Object.values(obj).reduce((a, b) => a + b);
 
 export default function Result() {
   const [usrResult, setUsrResult] = useState(getJsonItem("usrResult"));
-  const [percent, setPercent] = useState<object>({ "": 100 });
+  const [percent, setPercent] = useState({ "": 100 });
   const [draworder, setDraworder] = useState(null);
   const [primary, setPrimary] = useState([]);
   const [maxValue, setMaxvalue] = useState(100);
