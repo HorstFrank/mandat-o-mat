@@ -4,11 +4,9 @@ import Icon from "../icons/Icons";
 import styles from "./QuestionPDFLink.module.css";
 import txtjson from "../../assets/json/text.json";
 
-export type QuestionPDFLinkType = {
-  onClick?: React.MouseEventHandler<HTMLDivElement>;
-};
 
-export default function QuestionPDFLink({ onClick }: QuestionPDFLinkType) {
+
+export default function QuestionPDFLink({ onClick }) {
   const [modalstate, setmodalstate] = useState(false);
 
   function clickHandler() {
