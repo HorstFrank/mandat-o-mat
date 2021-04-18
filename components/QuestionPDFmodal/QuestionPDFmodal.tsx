@@ -1,15 +1,20 @@
-import React, { useState } from "react";
-import { txt, txtFindReplace } from "../../assets/utils/txt";
+import React from "react";
+// import { txt, txtFindReplace } from "../../assets/utils/txt";
 import Icon from "../icons/Icons";
 import styles from "./QuestionPDFmodal.module.css";
 
 export type QuestionPDFmodalType = {
-  url: string;
+  url?: string;
   state?: boolean;
+  xx?: string;
   onClick?: React.MouseEventHandler<HTMLDivElement>;
 };
 
-export default function QuestionPDFmodal({ url = "", state = false, onClick }) {
+export default function QuestionPDFmodal({
+  url = "",
+  state = false,
+  onClick,
+}: QuestionPDFmodalType) {
   const showHideClassName = state
     ? `${styles.modal} ${styles["display-block"]}`
     : `${styles.modal} ${styles["display-none"]}`;
