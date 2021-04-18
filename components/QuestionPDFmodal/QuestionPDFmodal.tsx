@@ -6,7 +6,6 @@ import styles from "./QuestionPDFmodal.module.css";
 export type QuestionPDFmodalType = {
   url?: string;
   state?: boolean;
-  xx?: string;
   onClick?: React.MouseEventHandler<HTMLDivElement>;
 };
 
