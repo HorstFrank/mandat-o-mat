@@ -3,8 +3,6 @@ import React from "react";
 import Icon from "../icons/Icons";
 import styles from "./QuestionPDFmodal.module.css";
 
-
-
 export default function QuestionPDFmodal({
   url = "",
   state = false,

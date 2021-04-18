@@ -7,9 +7,10 @@ export default {
   component: QuestionPDFmodal,
 } as Meta;
 
-const Template: Story<QuestionPDFmodalType> = (args) => (
+const Template = (args) => (
   <QuestionPDFmodal {...args} />
 );
 
 export const QuestionPDFmodalComp = Template.bind({});
 QuestionPDFmodalComp.args = {};
+ 
