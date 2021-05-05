@@ -19,7 +19,7 @@ Fraktion A:
 Ja:20, Nein: 70, Enthaltung: 10
 
 Franktion B:
-Ja:70, Nein: 20, Enthaltung: 10,
+Ja: 140, Nein: 40, Enthaltung: 20,
 
 Der User stimmte ab mit JA.
 
